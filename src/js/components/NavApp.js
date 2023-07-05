@@ -81,7 +81,9 @@ class NavApp extends LitWithoutShadowDom {
               />
             </a>
             <ul class="dropdown-menu text-small">
-              <li><a class="dropdown-item" href="#">Add Story</a></li>
+              <li><a class="dropdown-item" href="#"><b>Faisal Sulaiman</b></a></li>
+              <li><hr class="dropdown-divider" /></li>
+              <li><a class="dropdown-item" href="/stories/add.html">Add Story</a></li>
               <li><hr class="dropdown-divider" /></li>
               <li><a class="dropdown-item" href="#">Sign out</a></li>
             </ul>

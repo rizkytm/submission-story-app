@@ -4,9 +4,23 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title><%= htmlWebpackPlugin.options.title %> | Story App</title>
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      .bi {
+        vertical-align: -0.125em;
+        fill: currentColor;
+      }
+    </style>
   </head>
   <body>
-    <header>
+    <header class="p-3 mb-3 border-bottom">
       <nav-app brandName="<%= brandName %>"></nav-app>
     </header>
 
@@ -17,26 +31,26 @@
 
           <form
             class="row d-flex justify-content-center g-3"
-            id="addRecordForm"
+            id="addStoryForm"
             novalidate
           >
             <div class="col-md-6">
               <div class="col mb-4">
-                <label for="validationCustomNotes" class="form-label"
+                <label for="validationDescription" class="form-label"
                   >Description</label
                 >
                 <textarea-with-validation
-                  inputId="validationCustomNotes"
+                  inputId="validationDescription"
                   invalidFeedbackMessage="Wajib diisi"
                   required
                 ></textarea-with-validation>
               </div>
               <div class="col mb-4">
-                <label for="validationCustomEvidence" class="form-label"
+                <label for="validationPhoto" class="form-label"
                   >Photo</label
                 >
                 <input-image-with-preview
-                  inputId="validationCustomEvidence"
+                  inputId="validationPhoto"
                   invalidFeedbackMessage="Wajib diisi"
                   required
                 ></input-image-with-preview>
@@ -51,11 +65,7 @@
     </main>
 
     <footer>
-      <div class="main-footer bg-dark">
-        <div class="container px-3 py-4">
-          <footer-app></footer-app>
-        </div>
-      </div>
+      <footer-app></footer-app>
     </footer>
   </body>
 </html>
